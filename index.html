@@ -4,10 +4,55 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>glsl-tv</title>
+    <title>glsl.tv</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="title-wrap">
+        <h1 class="title" id="title">Hello World</h1>
+      </div>
+
+      <div class="tv">
+        <div class="antenna">
+          <div class="antenna-l"></div>
+          <div class="antenna-r"></div>
+        </div>
+
+        <div class="tv-body">
+          <div class="tv-bezel">
+            <div class="tv-screen">
+              <canvas id="glCanvas"></canvas>
+              <div class="scanlines"></div>
+            </div>
+          </div>
+
+          <div class="tv-bottom">
+            <div class="tv-knob"></div>
+            <div class="tv-speaker">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="tv-knob"></div>
+          </div>
+        </div>
+
+        <div class="tv-legs">
+          <div class="tv-leg"></div>
+          <div class="tv-leg"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn btn-red active" data-shader="0"></button>
+        <button class="btn btn-green"      data-shader="1"></button>
+        <button class="btn btn-blue"       data-shader="2"></button>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
