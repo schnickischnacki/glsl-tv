@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git --version)",
+      "Bash(gh auth:*)",
+      "Bash(brew install:*)",
+      "Bash(mkdir -p /Users/niklashahn/hello-world-tv/shaders)",
+      "Read(//Users/niklashahn/**)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npx --version)",
+      "Bash(ruby --version)",
+      "Bash(cp -r /Users/niklashahn/hello-world-tv /tmp/hello-world-tv)",
+      "Read(//tmp/**)"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scene">
+
+    <!-- Title -->
+    <div class="title-wrap">
+      <span id="title">Hello World</span>
+    </div>
+
+    <!-- TV -->
+    <div class="tv">
+      <div class="tv-body">
+
+        <!-- Antenna -->
+        <div class="tv-antennas">
+          <div class="tv-antenna tv-antenna--left"></div>
+          <div class="tv-antenna tv-antenna--right"></div>
+        </div>
+
+        <!-- Screen -->
+        <div class="tv-bezel">
+          <div class="tv-screen">
+            <canvas id="gl"></canvas>
+            <div class="scanlines"></div>
+            <div class="screen-glow"></div>
+          </div>
+        </div>
+
+        <!-- Chin / knobs -->
+        <div class="tv-chin">
+          <div class="tv-brand">HEELLO</div>
+          <div class="tv-knobs">
+            <div class="tv-knob"></div>
+            <div class="tv-knob tv-knob--big"></div>
+          </div>
+        </div>
+
+      </div><!-- .tv-body -->
+
+      <!-- Legs -->
+      <div class="tv-legs">
+        <div class="tv-leg"></div>
+        <div class="tv-leg"></div>
+      </div>
+    </div><!-- .tv -->
+
+    <!-- Shader Buttons -->
+    <div class="controls">
+      <button class="btn btn-red   active" data-shader="0" aria-label="Shader 1: Color Waves"></button>
+      <button class="btn btn-green"        data-shader="1" aria-label="Shader 2: Psychedelic Noise"></button>
+      <button class="btn btn-blue"         data-shader="2" aria-label="Shader 3: Hypnotic Spiral"></button>
+    </div>
+
+  </div><!-- .scene -->
+
+  <script src="main.js"></script>
+</body>
+</html>
